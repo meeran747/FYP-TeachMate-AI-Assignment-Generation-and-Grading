@@ -1,0 +1,264 @@
+/* Common Utility Styles for Better Contrast and Readability */
+
+/* Class Selection Container */
+.class-selection-container {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: var(--primary-light);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.class-selection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.class-selection-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Buttons with proper contrast */
+.btn-primary {
+  padding: 8px 16px;
+  background: var(--primary-color);
+  color: var(--primary-text-on-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-success {
+  padding: 6px 12px;
+  background: var(--success-color);
+  color: var(--success-text);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  transition: all 0.2s ease;
+}
+
+.btn-success:hover {
+  opacity: 0.9;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline {
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Empty State */
+.empty-state-container {
+  padding: 20px;
+  text-align: center;
+  background: var(--warning-light);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.empty-state-container p {
+  margin: 0 0 15px 0;
+  color: var(--text-primary);
+}
+
+/* Class Card Expanded State */
+.class-card-expanded {
+  border: 2px solid var(--primary-color) !important;
+  border-radius: 8px;
+  background: var(--primary-light) !important;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.class-card-normal {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.class-header-expanded {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--primary-text-on-primary);
+  font-weight: 500;
+}
+
+.class-header-normal {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.class-actions-container {
+  padding: 20px;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Status Badges with proper contrast */
+.status-badge-published {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  background: var(--success-color);
+  color: var(--success-text);
+  font-weight: 600;
+}
+
+.status-badge-draft {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  background: var(--warning-color);
+  color: var(--warning-text);
+  font-weight: 600;
+}
+
+/* Info Boxes */
+.info-box {
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.info-box-warning {
+  background: var(--warning-light);
+  border-color: var(--warning-color);
+  color: var(--text-primary);
+}
+
+.info-box-success {
+  background: var(--success-light);
+  border-color: var(--success-color);
+  color: var(--text-primary);
+}
+
+.info-box-error {
+  background: var(--error-light);
+  border-color: var(--error-color);
+  color: var(--text-primary);
+}
+
+/* Text with proper contrast */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+/* Ensure all links have proper contrast */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Form elements with proper contrast */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+textarea,
+select {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-tertiary);
+  opacity: 1;
+}
+
+/* Disabled states */
+button:disabled,
+input:disabled,
+textarea:disabled,
+select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Focus visible for keyboard navigation */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
